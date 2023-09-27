@@ -1,11 +1,13 @@
 body {
   margin: 0px;
+  background-image: url(https://imagedelivery.net/9sCnq8t6WEGNay0RAQNdvQ/UUID-cl90ha15s5594319tqyt9kwftws/public);
+  
 }
 
 canvas {
-  background-color: lightgray;
-}
-
+  background-color:
+  
 img {
   display: none;
 }
+

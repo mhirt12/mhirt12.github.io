@@ -21,6 +21,7 @@ $(function () {
     createPlatform(-50, -50, 50, canvas.height + 500); //bottom
     createPlatform(canvas.width, -50, 50, canvas.height + 100);
 
+
     /**
      * Uncomment the loops below to add a "grid" to your platformer game's screen
      * The grid will place both horizontal and vertical platforms incremented 100 pixels apart
@@ -44,6 +45,24 @@ $(function () {
     // You must decide the x position, y position, width, and height of the platforms
     // example usage: createPlatform(x,y,width,height)
 
+   createPlatform(189,615,150,8);
+
+   createPlatform(341,476,150,8);
+
+   createPlatform(601,581,100,8);
+
+   createPlatform(691,530,100,8);
+   
+   createPlatform(900,481,88,8);
+
+   createPlatform(981,390,90,8);
+
+
+
+
+
+   
+
 
 
     
@@ -54,6 +73,11 @@ $(function () {
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
 
+createCollectable("kennedi", 401,318)
+
+createCollectable("diamond", 984,351)
+
+createCollectable("database", 630,543)
 
 
     // TODO 3
@@ -61,6 +85,14 @@ $(function () {
     // You must decide the wall you want the cannon on, the position on the wall, and the time between shots in milliseconds
     // Your wall choices are: 'top' 'left' 'right' and 'bottom'
     // example usage: createCannon(side, position, delay, width, height)
+
+      createCannon("right" , 751, 600, 30, 50); 
+
+      createCannon("left" , 291, 581, 30, 50); 
+      
+      createCannon("bottom", 750,701,30,50);
+
+      createCannon("bottom", 200,550,30,50);
 
 
 
@@ -72,3 +104,12 @@ $(function () {
 
   registerSetup(setup);
 });
+
+
+
+
+
+
+
+
+
