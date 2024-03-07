@@ -35,7 +35,7 @@ h1 {
     padding: 0 10px;
 }
 
-a {
+nav.a {
     text-decoration: none;
     color: #050505;
 }
@@ -66,21 +66,25 @@ main {
     padding: 8px;
 }
 
-h2,
-h3 {
+
+.content h3 {
     margin: 0px;
 }
 
-#all-contents {
-    max-width: 800px;
-    margin: auto;
-}
+
 
 
 
 /* portfolio styles */
 .content h1 {
     color: black;
+}
+
+
+
+.content {
+    flex:  1;
+    padding: 15px;
 }
 
 #portfolio {
@@ -96,7 +100,7 @@ h3 {
 }
 
 #portfolio li:hover {
-    background: #eee;l;p; 
+    background: #eee; 
 }
 
 #portfolio a {
