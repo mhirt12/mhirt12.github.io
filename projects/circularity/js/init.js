@@ -23,6 +23,7 @@ var init = function (window) {
         var circle;
         var circles = [];        
 
+        var circleNum = prompt("How many circles do you want?")
         // TODO 2 : Create a function that draws a circle 
 
         function drawCircle() {
@@ -33,11 +34,9 @@ var init = function (window) {
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-drawCircle();
-drawCircle();
-drawCircle();
-drawCircle();
-drawCircle();
+for(var i=0; i< circleNum; i++){
+    drawCircle();
+}
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -52,19 +51,14 @@ drawCircle();
         */
         function update() {
             // TODO 4 : Update the circle's position //
-
-            physikz.updatePosition([0])
-            physikz.updatePosition([1]);
-            physikz.updatePosition([2]);
-            physikz.updatePosition([3]);
-            physikz.updatePosition([4]);
+            for(var i = 0; i < circles.length; i++) { 
+                physikz.updatePosition(circles[i]);
+                game.checkCirclePosition(circles[i]);
+            }
+           
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-            game.checkCirclePosition([0]);
-            game.checkCirclePosition([1]);
-            game.checkCirclePosition([2]);
-            game.checkCirclePosition([3]);
-            game.checkCirclePosition([4]);
+            
 
 
 
