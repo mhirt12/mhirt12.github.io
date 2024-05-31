@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    </head>
-    <body>
-        <h1>RAM Clicker</h1>
-        <!-- <div class="top-box"> -->
-            <div class="main-box">
-                <div class="clicker-box">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Jan_Matejko%2C_Sta%C5%84czyk.jpg/1200px-Jan_Matejko%2C_Sta%C5%84czyk.jpg" alt="">
-                
 
-                   
-                </div>
-                <div class="autoclicker-box">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
 
-                </div>
-                <div class="upgrade-box">
-                    
-                </div>
-            </div>
-            <!-- <div class="credits">
+<body>
+    <h1>Stancyk Clicker</h1>
+    <!-- <div class="top-box"> -->
+    <div class="main-box">
+        <div class="clicker-box">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Jan_Matejko%2C_Sta%C5%84czyk.jpg/1200px-Jan_Matejko%2C_Sta%C5%84czyk.jpg"
+                id="clicker-image">
+            <p id="Stancyk-amount">Stancyks: 0</p>
+            <p>Stancyks per second: 0</p>
+
+
+
+        </div>
+        <div class="autoclicker-box">
+
+        </div>
+        <div class="upgrade-box">
+
+        </div>
+    </div>
+    <!-- <div class="credits">
 
             </div> -->
-        <!-- </div> -->
-        <script>
-            // Variables
-            
-      
-            // Core Functionality
+    <!-- </div> -->
+    <script>
+        // Variables
+        var stancyks1 = 0;
+
+        
 
 
-            // Event/Click Listeners
-            
+        // Core Functionality
 
-            // Functions
-            
-            
-            /* All code above here */
-          </script>
-    </body>
+
+        // Event/Click Listeners
+        $("#clicker-image").on("click", clickStancyk);
+
+
+        // Functions
+        function clickStancyk() {
+            stancyks1++
+            $("#Stancyk-amount").text("Stancyks: " + stancyks1);
+        
+        }
+
+        /* All code above here */
+    </script>
+</body>
+
 </html>
